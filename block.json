@@ -1,0 +1,91 @@
+{
+    "apiVersion": 2,
+    "name": "ud/messstation-block",
+    "title": "Messstation Block",
+    "category": "widgets",
+    "icon": "chart-line",
+    "description": "Zeigt Messwerte (z. B. Temperatur, Wasserstand, Gefahrenstufe) einer ausgewählten Messstation an.",
+    "editorScript": "file:./build/editor-script.js",
+    "viewScript": "file:./build/frontend-script.js",
+    "style": "file:./build/frontend-style.css",
+    "editorStyle": "file:./build/editor-style.css",
+    "attributes": {
+        "dataUrl": {
+            "type": "string",
+            "default": ""
+        },
+        "visibleKeys": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "default": [
+                "waterTemperature",
+                "dangerLevel",
+                "waterLevel",
+                "discharge"
+            ]
+        },
+        "showStation": {
+            "type": "boolean",
+            "default": true
+        },
+        "tempHeading": {
+            "type": "string",
+            "default": "Wassertemperatur"
+        },
+        "messstationHeading": {
+            "type": "string",
+            "default": "Messstation"
+        },
+        "levelHeading": {
+            "type": "string",
+            "default": "Wasserstand"
+        },
+        "dischargeHeading": {
+            "type": "string",
+            "default": "Abfluss"
+        },
+        "dangerHeading": {
+            "type": "string",
+            "default": "Gefahrenstufe"
+        },
+        "dangerGeneralHint": {
+            "type": "string",
+            "default": "Beachten Sie zusätzlich zur Gefahrenstufe die künstlichen Abflussschwankungen (Schwall und Sunk), welche durch den flexiblen Betrieb der Wasserkraftwerke in der Muota entstehen."
+        },
+        "dangerLevels": {
+            "type": "array",
+            "default": [
+                {
+                    "desc": "keine oder geringe Gefahr",
+                    "behav": "Der Aufenthalt im Bereich von Gewässern ist <strong>unproblematisch</strong>. Wachsamkeit ist jedoch stets erforderlich.",
+                    "effects": "Verkehrsbehinderungen und Schäden sind normalerweise nicht zu erwarten."
+                },
+                {
+                    "desc": "mässige Gefahr",
+                    "behav": "Der Aufenthalt im Bereich von Fliessgewässern <strong>kann gefährlich sein</strong>. Halten Sie vorsichtshalber genügend Abstand.",
+                    "effects": "Bei dieser Wasserführung sind lokale Ausuferungen (das Wasser verlässt das Bachbett) und Überflutungen unwahrscheinlich, aber nicht auszuschliessen. In Ausnahmefällen sind lokal Überflutungen von Strassenunterführungen, Tiefgaragen und Kellerräumen möglich. Lokale Behinderungen an exponierten Verkehrswegen sowie lokale Schäden in kleinerem Umfang sind unwahrscheinlich aber nicht auszuschliessen."
+                },
+                {
+                    "desc": "erhebliche Gefahr",
+                    "behav": "Der Aufenthalt im Bereich von Fliessgewässern ist <strong>gefährlich</strong>. Halten Sie sich fern.",
+                    "effects": "Bei dieser Wasserführung können an exponierten Stellen lokale Ausuferungen (das Wasser verlässt das Bachbett) und Überflutungen auftreten. Lokal sind Überflutungen von Strassenunterführungen, Tiefgaragen und Kellerräumen möglich. An exponierten Verkehrswegen sind lokale Behinderungen möglich und es muss mit lokalen Schäden in kleinerem Umfang gerechnet werden."
+                },
+                {
+                    "desc": "grosse Gefahr",
+                    "behav": "Der Aufenthalt im Bereich von Fliessgewässern ist <strong>äusserst gefährlich</strong>. Halten Sie sich fern.",
+                    "effects": "Bei dieser Wasserführung können vermehrt Ausuferungen (das Wasser verlässt das Bachbett) und Überflutungen auftreten. Dabei können Gebäude und Infrastrukturanlagen betroffen sein. Verkehrsbehinderungen sind möglich und es muss vermehrt mit Schäden gerechnet werden."
+                },
+                {
+                    "desc": "sehr grosse Gefahr",
+                    "behav": "Der Aufenthalt im Bereich von Fliessgewässern ist <strong>äusserst gefährlich</strong>. Halten Sie sich fern.",
+                    "effects": "Bei dieser Wasserführung können vielerorts Ausuferungen (das Wasser verlässt das Bachbett) und Überflutungen auftreten. Infrastrukturanlagen von nationaler Bedeutung wie zum Beispiel Bahnstrecken, Dörfer und Städte sowie Industrieanlagen können in grossem Masse von Überflutungen betroffen sein. Zum Teil sind massive Verkehrsbehinderungen zu erwarten. Es ist verbreitet mit zum Teil grossen Schäden zu rechnen."
+                }
+            ]
+        }
+    },
+    "supports": {
+        "html": false
+    }
+}

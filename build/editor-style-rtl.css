@@ -1,0 +1,122 @@
+/*!********************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/css/editor.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************/
+@charset "UTF-8";
+:root {
+  --wp--preset--color--ui-positive-100: #f3f8f1;
+  --wp--preset--color--ui-positive-200: #dcebd9;
+  --wp--preset--color--ui-positive-300: #c3dbbd;
+  --wp--preset--color--ui-positive-500: #a8c59f;
+  --wp--preset--color--ui-positive-700: #7ba66e;
+  --wp--preset--color--ui-positive-900: #4b6d40;
+  --wp--preset--color--ui-warning-100: #fdf1ee;
+  --wp--preset--color--ui-warning-200: #fadbd5;
+  --wp--preset--color--ui-warning-300: #f5a89a;
+  --wp--preset--color--ui-warning-500: #e76f60;
+  --wp--preset--color--ui-warning-700: #c75046;
+  --wp--preset--color--ui-warning-900: #8f312b;
+  --wp--preset--color--ui-info-100: #e8f1fb;
+  --wp--preset--color--ui-info-200: #cde0f7;
+  --wp--preset--color--ui-info-300: #9ec2f0;
+  --wp--preset--color--ui-info-500: #4a90e2;
+  --wp--preset--color--ui-info-700: #256bb5;
+  --wp--preset--color--ui-info-900: #174075;
+  --wp--preset--color--ui-neutral-100: #efefef;
+  --wp--preset--color--ui-neutral-150: #dedede;
+  --wp--preset--color--ui-neutral-200: #cccccc;
+  --wp--preset--color--ui-neutral-300: #aaaaaa;
+  --wp--preset--color--ui-neutral-400: #888888;
+  --wp--preset--color--ui-neutral-500: #666666;
+  --wp--preset--color--darken-100: #00000011;
+  --wp--preset--border-radius-ui: 12px;
+}
+
+.wp-block-ud-messstation-block {
+  border-radius: var(--wp--preset--border-radius-ui);
+  border: 1px solid;
+  border-color: var(--wp--preset--color--ui-neutral-400);
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+  padding: 12px;
+  width: 100%;
+  box-sizing: border-box;
+  /* JSON Datei auswählen*/
+  /*Dangerlevel */
+}
+.wp-block-ud-messstation-block * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.wp-block-ud-messstation-block .wp-block-heading {
+  font-family: inherit;
+  margin-bottom: 0.5rem;
+}
+.wp-block-ud-messstation-block h2 {
+  font-size: 1.25rem;
+  position: relative;
+  z-index: 2;
+}
+.wp-block-ud-messstation-block .no_folder_choosen {
+  background-color: var(--wp--preset--color--ui-warning-100);
+  padding: 0.25rem 0.5rem;
+  border-radius: calc(var(--border-radius, 4px) / 4);
+  font-size: 0.85rem;
+}
+.wp-block-ud-messstation-block .ud-messstation__file-path {
+  margin-top: 0.25rem;
+}
+.wp-block-ud-messstation-block .ud-messstation__file-path code {
+  font-size: 0.75rem;
+  font-weight: 100;
+  background: var(--wp--preset--color--ui-neutral-100);
+  padding: 4px 8px;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.wp-block-ud-messstation-block .ud-messstation__key-selection {
+  margin-top: 1rem;
+}
+.wp-block-ud-messstation-block .ud-messstation__key-selection .ud-messstation__keys {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.wp-block-ud-messstation-block .ud-messstation-dangerlevel {
+  width: 100%;
+}
+.wp-block-ud-messstation-block .ud-messstation-dangerlevel .ud-dangerlevel-grid {
+  display: flex;
+  width: 100%;
+}
+.wp-block-ud-messstation-block .ud-messstation-dangerlevel .ud-dangerlevel-grid .ud-gauge-wrap {
+  flex-basis: 50%;
+}
+.wp-block-ud-messstation-block .ud-messstation-dangerlevel .ud-dangerlevel-grid .ud-dangerlevel-current {
+  text-align: center;
+}
+.wp-block-ud-messstation-block .ud-messstation-dangerlevel .ud-dangerlevel-grid .ud-dangerlevel-accordion {
+  flex-basis: 50%;
+}
+.wp-block-ud-messstation-block .ud-messstation-dangerlevel .ud-dangerlevel-grid .ud-dangerlevel-accordion .ud-dangerlevel-item {
+  background: var(--wp--preset--color--ui-neutral-150);
+  border-radius: 12px;
+  padding: 6px;
+  margin-bottom: 6px;
+}
+.wp-block-ud-messstation-block .ud-messstation-dangerlevel .ud-dangerlevel-grid .ud-dangerlevel-accordion .ud-dangerlevel-item summary {
+  line-height: 1;
+}
+.wp-block-ud-messstation-block .ud-messstation-dangerlevel .ud-dangerlevel-grid .ud-dangerlevel-accordion .ud-dangerlevel-item .ud-dangerlevel-field > strong {
+  opacity: 0.75;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.wp-block-ud-messstation-block .ud-messstation-dangerlevel .ud-dangerlevel-grid .ud-dangerlevel-accordion .ud-dangerlevel-item .rich-text {
+  background: var(--wp--preset--color--ui-neutral-100);
+  padding: 4px;
+  border-radius: 6px;
+  line-height: 1.25rem;
+}
+.wp-block-ud-messstation-block .ud-messstation-dangerlevel .ud-dangerlevel-grid .ud-dangerlevel-accordion .ud-dangerlevel-item .rich-text strong {
+  color: var(--wp--preset--color--ui-positive-700);
+}

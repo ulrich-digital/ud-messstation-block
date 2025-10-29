@@ -1,0 +1,95 @@
+.wp-block-ud-messstation-block {
+	border-radius: var(--wp--preset--border-radius-ui);
+	border: 1px solid;
+	border-color: var(--wp--preset--color--ui-neutral-400);
+	margin-top: 1rem !important;
+	margin-bottom: 1rem !important;
+	padding: 12px;
+    width: 100%;
+    box-sizing: border-box;
+	* {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.wp-block-heading {
+		font-family: inherit;
+		margin-bottom: 0.5rem;
+	}
+
+	h2 {
+		font-size: 1.25rem;
+		position: relative;
+		z-index: 2;
+	}
+
+	.no_folder_choosen {
+		background-color: var(--wp--preset--color--ui-warning-100);
+		padding: 0.25rem 0.5rem;
+		border-radius: calc(var(--border-radius, 4px) / 4);
+		font-size: 0.85rem;
+	}
+
+	/* JSON Datei auswählen*/
+	.ud-messstation__file-path {
+		margin-top: 0.25rem;
+		code {
+			font-size: 0.75rem;
+			font-weight: 100;
+			background: var(--wp--preset--color--ui-neutral-100);
+			padding: 4px 8px;
+			box-sizing: border-box;
+			border-radius: 4px;
+		}
+	}
+	// Container mit den Keys
+	.ud-messstation__key-selection {
+		margin-top: 1rem;
+		.ud-messstation__keys {
+			display: flex;
+			flex-direction: column;
+			gap: 0.5rem;
+		}
+	}
+	/*Dangerlevel */
+	.ud-messstation-dangerlevel {
+		width: 100%;
+		.ud-dangerlevel-grid {
+			display: flex;
+			width: 100%;
+			.ud-gauge-wrap {
+				flex-basis: 50%;
+			}
+			.ud-dangerlevel-current {
+				text-align: center;
+			}
+			.ud-dangerlevel-accordion {
+				flex-basis: 50%;
+				.ud-dangerlevel-item {
+					background: var(--wp--preset--color--ui-neutral-150);
+					border-radius: 12px;
+					padding: 6px;
+					margin-bottom: 6px;
+                    summary{
+                        line-height: 1;
+                    }
+					.ud-dangerlevel-field > strong {
+						opacity: 0.75;
+						font-size: 0.75rem;
+						font-weight: 600;
+					}
+					.rich-text {
+						background: var(--wp--preset--color--ui-neutral-100);
+						padding: 4px;
+						border-radius: 6px;
+						line-height: 1.25rem;
+                        strong{
+color: 	var(--wp--preset--color--ui-positive-700);
+
+}
+					}
+				}
+			}
+		}
+	}
+}

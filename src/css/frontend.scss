@@ -1,0 +1,267 @@
+.entry-content > .wp-block-ud-messstation-block {
+	margin: auto;
+}
+
+.wp-block-ud-messstation-block {
+	display: flex;
+	gap: 3rem;
+	flex-wrap: wrap;
+	width: 1600px;
+	max-width: calc(100% - 80px);
+	max-width: unset;
+	@media screen and (max-width: 900px) {
+		gap: 2rem;
+	}
+	.ud-messstation-output {
+		h2 {
+			font-family: inherit;
+			font-size: 1.25rem;
+			text-align: left;
+			padding-bottom: 0.25rem;
+			border-bottom: 3px solid;
+			color: var(--wp--preset--color--sand-dark);
+			@media screen and (max-width: 600px) {
+				padding-bottom: 0.5rem;
+			}
+		}
+		&.ud-messstation-temperature {
+			flex-basis: calc(40% - 3rem);
+			@media screen and (max-width: 900px) {
+				flex-basis: calc(40% - 2rem);
+			}
+			@media screen and (max-width: 800px) {
+				flex-basis: 100%;
+			}
+			.value_container {
+				display: flex;
+				align-items: flex-end;
+				gap: 2rem;
+				color: var(--wp--preset--color--petrol);
+				.value {
+					line-height: 250px;
+					font-size: 9rem;
+					line-height: 1;
+				}
+				@media screen and (max-width: 1200px) {
+					.value {
+						font-size: 7rem;
+					}
+				}
+
+				@media screen and (max-width: 1100px) {
+					.value {
+						font-size: 6rem;
+					}
+				}
+
+				@media screen and (max-width: 1000px) {
+					.value {
+						font-size: 5rem;
+					}
+				}
+
+				svg {
+					width: 60px;
+					fill: var(--wp--preset--color--sand-dark);
+				}
+
+				@media screen and (max-width: 1300px) {
+					svg {
+						width: 50px;
+					}
+				}
+
+				@media screen and (max-width: 1100px) {
+					svg {
+						width: 40px;
+					}
+				}
+			}
+		}
+		&.ud-messstation-messstation {
+			flex-basis: 60%;
+			@media screen and (max-width: 800px) {
+				flex-basis: 100%;
+			}
+			.wp-block-muotamap-single-map {
+				width: calc(100% - 0px) !important;
+				max-width: unset !important;
+				height: 500px;
+				margin: 1rem 0px;
+				box-sizing: border-box;
+			}
+		}
+		&.ud-messstation-dangerlevel {
+			margin-bottom: 3rem;
+			.row_1 {
+				.ud-messstation-dangerlevel-notice {
+					margin-top: 1rem;
+				}
+			}
+			.row_2 {
+				display: flex;
+				margin-top: 3rem;
+				justify-content: center;
+				@media screen and (max-width: 1000px) {
+					flex-direction: column;
+					gap: 2rem;
+				}
+
+				.danger_level_section {
+					flex-grow: 2;
+					padding-right: 2rem;
+					max-width: 800px;
+					@media (max-width: 1000px) {
+						padding-right: 0;
+					}
+
+					.ud-dangerlevel-gauge {
+						width: 100%;
+						aspect-ratio: 1.8 / 1;
+						overflow: hidden;
+
+						margin: 0 auto;
+
+						svg {
+							width: 200% !important;
+							height: 200% !important;
+							display: block;
+							transform: translateY(-33%);
+						}
+					}
+
+					/* Schrift im Gauge */
+					svg text {
+						font-family: "Brown" !important;
+						font-weight: bold !important;
+					}
+				}
+
+				.descriptions {
+					text-align: center;
+					.description {
+						text-align: center;
+						color: var(--wp--preset--color--petrol);
+						display: inline-block;
+						background-color: var(--wp--preset--color--sand-dark);
+						line-height: 1;
+						padding: 0.25rem 0.5rem 0.4rem;
+						border-radius: var(--border-radius);
+					}
+				}
+
+				.behavior_and_effects {
+					max-width: 500px;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					gap: 2rem;
+					strong {
+						color: var(--wp--preset--color--petrol);
+					}
+					.row {
+						display: flex;
+						gap: 1rem;
+						color: var(--wp--preset--color--sand-dark);
+						.svg_container {
+							height: 50px;
+							width: 50px;
+							aspect-ratio: 1 / 1;
+							display: flex;
+							padding-top: 0.5rem;
+
+							svg {
+								fill: var(--wp--preset--color--petrol);
+							}
+						}
+						.text {
+							border-top: 2px solid;
+							font-size: 0.75rem;
+							line-height: 1rem;
+							padding-top: 0.5rem;
+						}
+					}
+				}
+			}
+		}
+		&.ud-messstation-waterlevel,
+		&.ud-messstation-discharge {
+			flex-basis: 100%;
+			.ud-waterlevel-chart-wrap {
+				position: relative;
+				width: 100%;
+				height: 360px; /* ⬅️ gewünschte Höhe hier festlegen */
+			}
+
+			.ud-waterlevel-canvas {
+				display: block;
+				width: 100% !important;
+				height: 100% !important;
+			}
+		}
+
+		&.ud-messstation-metric {
+			flex-basis: 100%;
+			.ud-metric-header {
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+				gap: 0.8rem;
+				margin-bottom: 1rem;
+				font-weight: 700;
+				border-bottom: 3px solid var(--wp--preset--color--sand-dark);
+				@media screen and (max-width: 800px) {
+					flex-direction: column;
+					align-items: flex-start;
+				}
+				.ud-metric-label {
+					font-size: 1.25rem;
+					cursor: pointer;
+					color: var(--wp--preset--color--sand-dark);
+					&.is-active {
+						color: var(--wp--preset--color--petrol);
+					}
+				}
+
+				.ud-metric-switch {
+					position: relative;
+					width: 54px;
+					height: 28px;
+					flex: 0 0 auto;
+
+					input {
+						display: none;
+					}
+					.slider {
+						position: absolute;
+						inset: 0;
+						border-radius: 9999px;
+						background: var(--wp--preset--color--sand-dark);
+						transition: transform 0.2s ease;
+						cursor: pointer;
+					}
+					.slider::after {
+						content: "";
+						position: absolute;
+						top: 3px;
+						left: 3px;
+						width: 22px;
+						height: 22px;
+						border-radius: 50%;
+						background: #fff;
+						box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+						transition: transform 0.2s ease;
+					}
+					input:checked + .slider::after {
+						transform: translateX(26px);
+					}
+				}
+			}
+
+			.ud-waterlevel-chart-wrap {
+				position: relative;
+				height: min(56vh, 420px);
+			}
+		}
+	}
+}

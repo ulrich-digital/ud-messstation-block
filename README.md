@@ -3,7 +3,6 @@
 Ein Block zur Anzeige aktueller Messwerte (z. B. Temperatur, Wasserstand, Abfluss oder Gefahrenstufe) einer definierten Messstation.
 Er liest strukturierte JSON-Daten aus einer konfigurierbaren Quelle und stellt sie übersichtlich im Frontend dar – ergänzt durch grafische Visualisierungen und Gefahrenhinweise.
 
----
 
 ## Funktionen
 
@@ -17,21 +16,18 @@ Er liest strukturierte JSON-Daten aus einer konfigurierbaren Quelle und stellt s
 - Automatische DOM-Aktualisierung bei neuen Messdaten
 - Vollständig kompatibel mit Full Site Editing (FSE)
 
----
 
 ## Editor-Ansicht
 
 ![Editor-Ansicht](./assets/messstation-editor-view.png)
 *Abbildung: Der Block im Editor mit Auswahlfeld für die JSON-Datei und sichtbaren Messwerten.*
 
----
 
 ## Frontend-Ansicht
 
 ![Frontend-Ansicht](./assets/messstation-frontend-view.png)
 *Abbildung: Darstellung der Messstation mit aktuellen Werten und Gefahrenstufen.*
 
----
 
 ## Technische Details
 
@@ -46,7 +42,7 @@ Er liest strukturierte JSON-Daten aus einer konfigurierbaren Quelle und stellt s
   - `visibleKeys` – sichtbare Werte (z. B. `waterTemperature`, `waterLevel`, `discharge`)
   - `dangerLevels` – definierte Gefahrenstufen und Beschreibungen
 
----
+
 
 ## Installation
 
@@ -55,24 +51,15 @@ Er liest strukturierte JSON-Daten aus einer konfigurierbaren Quelle und stellt s
 3. In den Block-Einstellungen das JSON-Verzeichnis definieren
 4. Im Editor den Block **„UD Messstation“** einfügen und gewünschte Datei auswählen
 
----
 
-## Anforderungen
-
-- WordPress ≥ 6.7
-- PHP ≥ 7.4
-- Aktiver Block-Editor (Gutenberg oder FSE-kompatibles Theme)
-
----
 
 ## Autor
 
-**ulrich.digital gmbh**
-[https://ulrich.digital](https://ulrich.digital)
+[ulrich.digital gmbh](https://ulrich.digital)
 
----
 
 ## Lizenz
 
 GPL v2 or later
 [https://www.gnu.org/licenses/gpl-2.0.html](https://www.gnu.org/licenses/gpl-2.0.html)
+

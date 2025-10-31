@@ -17,16 +17,14 @@ Er liest strukturierte JSON-Daten aus einer konfigurierbaren Quelle und stellt s
 - Vollständig kompatibel mit Full Site Editing (FSE)
 
 
-## Editor-Ansicht
-
-![Editor-Ansicht](./assets/messstation-editor-view.png)
-*Abbildung: Der Block im Editor mit Auswahlfeld für die JSON-Datei und sichtbaren Messwerten.*
-
-
-## Frontend-Ansicht
+## Screenshots
 
 ![Frontend-Ansicht](./assets/messstation-frontend-view.png)
-*Abbildung: Darstellung der Messstation mit aktuellen Werten und Gefahrenstufen.*
+*Darstellung der Messstation mit aktuellen Werten und Gefahrenstufen.*
+
+![Editor-Ansicht](./assets/messstation-editor-view.png)
+*Der Block im Editor mit Auswahlfeld für die JSON-Datei und sichtbaren Messwerten.*
+
 
 
 ## Technische Details

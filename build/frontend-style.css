@@ -262,5 +262,9 @@
   position: relative;
   height: min(56vh, 420px);
 }
+.wp-block-ud-messstation-block .ud-messstation-output .quellenangabe_bafu {
+  text-align: right;
+  font-size: 14px;
+}
 
 /*# sourceMappingURL=frontend-style.css.map*/

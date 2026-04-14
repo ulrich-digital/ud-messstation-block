@@ -157,7 +157,11 @@ function ud_messstation_render($attributes, $content, $block) {
                                 </svg></div>
                             <div class="text dl-effects"><?php echo wpautop(wp_kses_post($dlEntry['effects'] ?? '')); ?></div>
                         </div>
+                       
                     </div>
+                </div>
+                <div class="row_3">
+ <div class="quellenangabe_bafu">Datenquelle: <a href="https://www.hydrodaten.admin.ch/de/" target="_blank">Bundesamt für Umwelt</a> (BAFU)</div>
                 </div>
             </section>
         <?php endif; ?>
